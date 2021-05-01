@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iUPwxUzemqRt4rN6HnBWqe8P2cbD0OjH+bL1/9tGO5Tod8btf8z7SmuFjdBh0gq+l3vYsifHIYp2qglcLjWb4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AllanSouza\\OneDrive\\Documentos\\Projetos-pessoais\\Sistema-Pagamento\\Sistema-Pagamento\\Sistema-Pagamento.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AllanSouza\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

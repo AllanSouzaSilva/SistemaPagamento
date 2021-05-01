@@ -1,0 +1,13 @@
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\bin\Debug\netcoreapp3.1\Sistema-Pagamento.exe
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\bin\Debug\netcoreapp3.1\Sistema-Pagamento.deps.json
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\bin\Debug\netcoreapp3.1\Sistema-Pagamento.runtimeconfig.json
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\bin\Debug\netcoreapp3.1\Sistema-Pagamento.runtimeconfig.dev.json
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\bin\Debug\netcoreapp3.1\Sistema-Pagamento.dll
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\bin\Debug\netcoreapp3.1\Sistema-Pagamento.pdb
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\obj\Debug\netcoreapp3.1\Sistema-Pagamento.csprojAssemblyReference.cache
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\obj\Debug\netcoreapp3.1\Sistema-Pagamento.AssemblyInfoInputs.cache
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\obj\Debug\netcoreapp3.1\Sistema-Pagamento.AssemblyInfo.cs
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\obj\Debug\netcoreapp3.1\Sistema-Pagamento.csproj.CoreCompileInputs.cache
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\obj\Debug\netcoreapp3.1\Sistema-Pagamento.dll
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\obj\Debug\netcoreapp3.1\Sistema-Pagamento.pdb
+C:\Users\AllanSouza\OneDrive\Documentos\Projetos-pessoais\Sistema-Pagamento\Sistema-Pagamento\obj\Debug\netcoreapp3.1\Sistema-Pagamento.genruntimeconfig.cache

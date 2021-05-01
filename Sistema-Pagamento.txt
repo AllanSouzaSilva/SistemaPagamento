@@ -1,0 +1,47 @@
+Tarefas de sistema de console aplicaton: 
+
+1. Criar as classes.
+- Pessoa Ok
+- Fisica ok
+- Juridica ok 
+- Conta ok
+- ContaPF
+- Conta Empresarial
+- Endereço ok
+- Conta negócios ok
+
+2. Criar as propriedades.
+
+Pessoa: Id,Nome, Idade, Endereço, Conta.
+Fisica: Cpf, Conta ok
+Juridica: Conta negocios,Limite de emprestimo, Cnpj 
+Endereco: Rua, Cidade, Cep. ok
+Conta: Saque, Deposito e saldo. ok 
+Conta PF: Poupança. ok
+Conta negocios: Limite de emprestimo. 
+
+3. Criar construtores e override toString.
+- Pessoa Ok
+- Fisica ok
+- Juridica ok 
+- Conta ok
+- ContaPF ok
+- Conta Empresarial ok
+- Endereço ok
+- Conta negócios ok
+
+28/04/2021 -  Teste ok!
+Inplemntar cadastro juridico.
+4. Criar Metodos da classe pessoa.
+
+Sacar.
+Depositar.
+Emprestimo.
+Saldo.
+Consultar.
+Alterar. 
+Deletar.
+
+
+
+
