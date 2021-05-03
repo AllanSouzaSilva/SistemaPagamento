@@ -13,13 +13,13 @@
 
         public override string ToString()
         {
-            return "Saldo:"
+            return ", Saldo:"
                 + Saldo
-                + "Saque:"
+                + ", Saque:"
                 + Saque
-                + "Deposito:"
+                + ", Deposito:"
                 + Deposito
-                + "Poupança:"
+                + ", Poupança:"
                 + Poupanca;
         }
     }

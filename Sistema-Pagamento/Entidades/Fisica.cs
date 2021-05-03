@@ -16,19 +16,19 @@ namespace Sistema_Pagamento.Entidades
 
         public override string ToString()
         {
-            return "Nome:"
+            return "Nome: "
                     + Nome
-                    + "Idade:"
+                    + ", Idade: "
                     + Idade
-                    + "CPf:"
+                    + ", Cpf: "
                     + Cpf
-                    + "Saldo"
+                    + ", Saldo "
                     + Conta.Saldo
-                    + "Saque:"
+                    + ", Saque: "
                     + Conta.Saque
-                    + "Deposito:"
+                    + ", Deposito: "
                     + Conta.Deposito
-                    + "Poupança:"
+                    + ", Poupança: "
                     + Conta.Poupanca
                     ;
         }

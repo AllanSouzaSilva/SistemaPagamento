@@ -20,11 +20,11 @@ namespace Sistema_Pagamento.Entidades
         {
             return "Nome: " 
                 + Nome
-                + "Idade: "
+                + ", Idade: "
                 + Idade
-                + "Cnpj: "
+                + ", Cnpj: "
                 + Cnpj
-                + "Conta Empresarial: "
+                + ", Conta Empresarial: "
                 + ContaPj
                 ;
         }

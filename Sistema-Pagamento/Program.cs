@@ -11,24 +11,25 @@ namespace Sistema_Pagamento
         {
             List<Pessoa> pessoas = new List<Pessoa>();
 
-            Console.WriteLine("Cadastrar quantos? :");
+            Console.Write("Deseja realizar quantos cadastros ? : ");
             int n = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i <= n; i++)
+            for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine("Nome: ");
+                Console.Write($"# Cadastro {i}:");
+                Console.Write("\nNome: ");
                 string nome = Console.ReadLine();
-                Console.WriteLine("Digite sua idade:");
+                Console.Write("Digite sua idade:");
                 int idade = int.Parse(Console.ReadLine());
-                Console.WriteLine("Fazer um deposito?");
+                Console.Write("Fazer um deposito?");
                 double deposito = double.Parse(Console.ReadLine());
-                Console.WriteLine("Deseja sacar algum valor?");
+                Console.Write("Deseja sacar algum valor?");
                 double saque = double.Parse(Console.ReadLine());
-                Console.WriteLine("Pessoa fisica[F] ou juridica[J]?");
+                Console.Write("Pessoa fisica[F] ou juridica[J]?");
                 char y = char.Parse(Console.ReadLine());
                 if (y == 'F' || y == 'f')
                 {
-                    Console.WriteLine("Digite o CPF:");
+                    Console.Write("Digite o CPF:");
                     int cpf = int.Parse(Console.ReadLine());
                     ContaPF conta = new ContaPF(saque, deposito, 100, 10);
                     Fisica fisica = new Fisica(nome, idade, cpf, conta);
@@ -38,7 +39,7 @@ namespace Sistema_Pagamento
                 else
                 {
 
-                    Console.WriteLine("Digite o CNPJ: ");
+                    Console.Write("Digite o CNPJ: ");
                     string cnpj = Console.ReadLine();
                     ContaEmpresarial contaPj = new ContaEmpresarial(0, saque,deposito,500);
                     Juridica juridica = new Juridica(nome, idade, cnpj, contaPj);
@@ -46,11 +47,11 @@ namespace Sistema_Pagamento
 
 
                 }
-                
+                Console.WriteLine();
             }
             foreach (Pessoa i in pessoas)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("\n Dados do cliente: "+ i);
             }
 
         }

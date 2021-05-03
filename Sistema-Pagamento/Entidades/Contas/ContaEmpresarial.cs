@@ -16,13 +16,13 @@ namespace Sistema_Pagamento.Entidades.Contas
 
         public override string ToString()
         {
-            return "Saldo:"
+            return ", Saldo: "
                 + Saldo
-                + "Saque:"
+                + ", Saque: "
                 + Saque
-                + "Deposito:"
+                + ", Deposito: "
                 + Deposito
-                + "Limite de emprestimo"
+                + ", Limite de emprestimo "
                 + LimiteEmprestimo;
         }
     }

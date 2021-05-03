@@ -16,5 +16,20 @@ namespace Sistema_Pagamento.Entidades.Contas
             Saque = saque;
             Deposito = deposito;
         }
+
+        public void ClienteSaque(double saque)
+        {
+            Saldo -= saque;
+        }
+
+        public void ClienteDeposito(double deposito)
+        {
+            Saldo += deposito;
+        }
+        public double AtualizarSaldo()
+        {
+            return Saldo;
+        }
+
     }
 }
