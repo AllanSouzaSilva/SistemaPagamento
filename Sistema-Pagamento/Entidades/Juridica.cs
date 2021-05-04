@@ -7,7 +7,7 @@ namespace Sistema_Pagamento.Entidades
 {
     class Juridica : Pessoa
     {
-       
+
         public string Cnpj { get; set; }
         public ContaEmpresarial ContaPj { get; set; }
 
@@ -18,14 +18,18 @@ namespace Sistema_Pagamento.Entidades
         }
         public override string ToString()
         {
-            return "Nome: " 
+            return "\nNome: \n"
                 + Nome
-                + ", Idade: "
+                + "| Idade: \n"
                 + Idade
-                + ", Cnpj: "
+                + "| Cnpj: \n"
                 + Cnpj
-                + ", Conta Empresarial: "
+                + "| Conta Empresarial: \n"
                 + ContaPj
+                 + "| Saldo Final: \n"
+                + "\n-------------------------------\n"
+                + ContaPj.AtualizarSaldo()
+                + "\n-------------------------------"
                 ;
         }
     }

@@ -8,10 +8,16 @@ namespace Sistema_Pagamento.Entidades.Contas
     {
         public double LimiteEmprestimo { get; set; }
 
-        public ContaEmpresarial(double saldo, double saque, double deposito,double limiteEmprestimo) : 
-            base(saldo,saque,deposito)
+        public ContaEmpresarial(double saldo, double saque, double deposito, double limiteEmprestimo) :
+            base(saldo, saque, deposito)
         {
             LimiteEmprestimo = limiteEmprestimo;
+        }
+
+        public void Emprestimo(double emprestimo)
+        {
+            LimiteEmprestimo -= emprestimo;
+            Saldo += emprestimo;
         }
 
         public override string ToString()

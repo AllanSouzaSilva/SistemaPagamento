@@ -32,26 +32,35 @@ namespace Sistema_Pagamento
                     Console.Write("Digite o CPF:");
                     int cpf = int.Parse(Console.ReadLine());
                     ContaPF conta = new ContaPF(saque, deposito, 100, 10);
+                    conta.ClienteDeposito(deposito);
+                    conta.ClienteSaque(saque);
                     Fisica fisica = new Fisica(nome, idade, cpf, conta);
                     pessoas.Add(fisica);
 
                 }
                 else
                 {
-
                     Console.Write("Digite o CNPJ: ");
                     string cnpj = Console.ReadLine();
-                    ContaEmpresarial contaPj = new ContaEmpresarial(0, saque,deposito,500);
+                    Console.Write("Quantos de emprestimo? : ");
+                    double emprestimo = double.Parse(Console.ReadLine());
+                    ContaEmpresarial contaPj = new ContaEmpresarial(0, saque, deposito, 500);
                     Juridica juridica = new Juridica(nome, idade, cnpj, contaPj);
+                    contaPj.Emprestimo(emprestimo);
+                    contaPj.AtualizarSaldo();
+                    contaPj.ClienteDeposito(deposito);
+                    contaPj.ClienteSaque(saque);
                     pessoas.Add(juridica);
-
-
                 }
                 Console.WriteLine();
             }
-            foreach (Pessoa i in pessoas)
+            foreach (Pessoa dados in pessoas)
             {
-                Console.WriteLine("\n Dados do cliente: "+ i);
+                Console.Write("----------------------------------");
+                Console.Write("      Dados do cliente: \n");
+                Console.Write("\n----------------------------------\n");
+                Console.WriteLine(dados);
+                
             }
 
         }

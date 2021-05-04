@@ -11,6 +11,11 @@
             Poupanca = poupanca;
         }
 
+        public double Poupa(double poupa)
+        {
+            return Saldo += poupa;
+        }
+
         public override string ToString()
         {
             return ", Saldo:"
