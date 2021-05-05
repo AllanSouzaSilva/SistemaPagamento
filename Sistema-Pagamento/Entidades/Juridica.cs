@@ -1,6 +1,7 @@
 ﻿using Sistema_Pagamento.Entidades.Contas;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace Sistema_Pagamento.Entidades
@@ -18,18 +19,22 @@ namespace Sistema_Pagamento.Entidades
         }
         public override string ToString()
         {
-            return "\nNome: \n"
+            return "\nNome: "
                 + Nome
-                + "| Idade: \n"
-                + Idade
-                + "| Cnpj: \n"
+                + "\nIdade:"
+                + Idade + " Anos"
+                + "\nCnpj: "
                 + Cnpj
-                + "| Conta Empresarial: \n"
-                + ContaPj
-                 + "| Saldo Final: \n"
-                + "\n-------------------------------\n"
-                + ContaPj.AtualizarSaldo()
-                + "\n-------------------------------"
+                + "\nDeposito: "
+                + ContaPj.Deposito.ToString("F2", CultureInfo.InvariantCulture) + " Reais"
+                + "\nSaque: "
+                + ContaPj.Saque.ToString("F2", CultureInfo.InvariantCulture) + " Reais"
+                + "\nLimite de emprestimo: "
+                + ContaPj.LimiteEmprestimo.ToString("F2", CultureInfo.InvariantCulture) + " Reais"
+                + "\n--------------------------------------"
+                + "\nSaldo Final: "
+                + ContaPj.AtualizarSaldo().ToString("F2", CultureInfo.InvariantCulture) + " Reais"
+                + "\n--------------------------------------"
                 ;
         }
     }

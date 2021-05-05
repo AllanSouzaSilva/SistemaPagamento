@@ -31,11 +31,15 @@ Conta negocios: Limite de emprestimo. ok
 - Conta negócios ok
 
 4. Criar Metodos da classe pessoa.
-02/05/2021 - Criar as classe abstratas da classe CONTA  e reaproveitar nas classes, ContaPF e ContaPJ
-Sacar.
-Depositar.
-Emprestimo.
-Saldo.
+05/05/2021 - Criado os metodos e estam todos funcionando. Falta o crud. 
+05/05/2021 -  Criando os menus de interação com switc e case.
+
+Toupper: Converte o valor de um caractere Unicode especificado em seu equivalente em letras maiúsculas usando as informações de formatação específicas à cultura especificadas.
+
+Sacar. ok
+Depositar. ok
+Emprestimo. ok
+Saldo. ok 
 Consultar.
 Alterar. 
 Deletar.

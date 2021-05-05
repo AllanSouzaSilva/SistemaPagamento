@@ -22,14 +22,16 @@ namespace Sistema_Pagamento.Entidades.Contas
             Saldo -= saque;
         }
 
-        public void ClienteDeposito(double deposito)
+        public double ClienteDeposito(double deposito)
         {
-            Saldo += deposito;
+             Saldo += deposito;
+            return Saldo;
         }
+        
         public double AtualizarSaldo()
         {
             return Saldo;
         }
-
+        
     }
 }

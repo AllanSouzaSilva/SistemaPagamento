@@ -1,4 +1,5 @@
 ﻿using Sistema_Pagamento.Entidades.Contas;
+using System.Globalization;
 
 namespace Sistema_Pagamento.Entidades
 {
@@ -13,26 +14,27 @@ namespace Sistema_Pagamento.Entidades
             Cpf = cpf;
             Conta = conta;
         }
-
+        
         public override string ToString()
         {
-            return "Nome: "
+            return "\nNome: "
                     + Nome
-                    + ", Idade: "
-                    + Idade
-                    + ", Cpf: "
+                    + "\nIdade: "
+                    + Idade + " Anos"
+                    + "\nCpf: "
                     + Cpf
-                    + ", Saldo "
-                    + Conta.Saldo
-                    + ", Saque: "
-                    + Conta.Saque
-                    + ", Deposito: "
-                    + Conta.Deposito
-                    + ", Poupança: "
-                    + Conta.Poupanca
-                    + "Saldo Final"
-                    + Conta.AtualizarSaldo()
+                    + "\nDeposito: "
+                    + Conta.Deposito.ToString("F2", CultureInfo.InvariantCulture) + " Reais"
+                    + "\nPoupança:"
+                    + Conta.Poupa().ToString("F2", CultureInfo.InvariantCulture) + " Reais"
+                    + "\nSaque: "
+                    + Conta.Saque.ToString("F2", CultureInfo.InvariantCulture) + " Reais"
+                    + "\n--------------------------------------"
+                    + "\nSaldo Final: "
+                    + Conta.AtualizarSaldo().ToString("F2", CultureInfo.InvariantCulture) + " Reais"
+                    + "\n--------------------------------------"
                     ;
+          
         }
     }
 

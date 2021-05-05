@@ -19,17 +19,6 @@ namespace Sistema_Pagamento.Entidades.Contas
             LimiteEmprestimo -= emprestimo;
             Saldo += emprestimo;
         }
-
-        public override string ToString()
-        {
-            return ", Saldo: "
-                + Saldo
-                + ", Saque: "
-                + Saque
-                + ", Deposito: "
-                + Deposito
-                + ", Limite de emprestimo "
-                + LimiteEmprestimo;
-        }
     }
+
 }

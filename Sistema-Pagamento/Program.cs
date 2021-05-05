@@ -7,36 +7,73 @@ namespace Sistema_Pagamento
 {
     class Program
     {
+        static List<Pessoa> pessoas = new List<Pessoa>();
         static void Main(string[] args)
         {
-            List<Pessoa> pessoas = new List<Pessoa>();
 
-            Console.Write("Deseja realizar quantos cadastros ? : ");
+            string opcaoUsuario = ObterOpcaoUsuario();
+
+            while (opcaoUsuario.ToUpper() != "X")
+            {
+
+                switch (opcaoUsuario)
+                {
+                    case "1":
+                        CadastrarUsuarios();
+                        break;
+                    case "2":
+                        ListarCadastros();
+                        break;
+                    case "3":
+
+                        break;
+                    case "4":
+
+                        break;
+                    case "5":
+
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException("Opção invalida");
+                }
+                opcaoUsuario = ObterOpcaoUsuario();
+            }
+            Console.WriteLine("Obrigado por utilizar nossos serviços. ");
+            Console.ReadLine();
+        }
+        private static void CadastrarUsuarios()
+        {
+
+            Console.Write("Deseja realizar quantos cadastros ? :");
             int n = int.Parse(Console.ReadLine());
 
             for (int i = 1; i <= n; i++)
             {
-                Console.Write($"# Cadastro {i}:");
+                Console.Write($"\n# Cadastro {i}: ");
                 Console.Write("\nNome: ");
                 string nome = Console.ReadLine();
-                Console.Write("Digite sua idade:");
+                Console.Write("Digite sua idade: ");
                 int idade = int.Parse(Console.ReadLine());
-                Console.Write("Fazer um deposito?");
+                Console.Write("Fazer um deposito? ");
                 double deposito = double.Parse(Console.ReadLine());
-                Console.Write("Deseja sacar algum valor?");
+                Console.Write("Deseja sacar algum valor, se sim quanto? ");
                 double saque = double.Parse(Console.ReadLine());
-                Console.Write("Pessoa fisica[F] ou juridica[J]?");
+
+                Console.Write("Pessoa fisica[F] ou juridica[J]?: ");
                 char y = char.Parse(Console.ReadLine());
                 if (y == 'F' || y == 'f')
                 {
-                    Console.Write("Digite o CPF:");
+                    Console.Write("Digite o CPF: ");
                     int cpf = int.Parse(Console.ReadLine());
-                    ContaPF conta = new ContaPF(saque, deposito, 100, 10);
+                    ContaPF conta = new ContaPF(0, saque, deposito, 0);
                     conta.ClienteDeposito(deposito);
                     conta.ClienteSaque(saque);
+                    conta.Poupa();
                     Fisica fisica = new Fisica(nome, idade, cpf, conta);
                     pessoas.Add(fisica);
-
                 }
                 else
                 {
@@ -44,25 +81,46 @@ namespace Sistema_Pagamento
                     string cnpj = Console.ReadLine();
                     Console.Write("Quantos de emprestimo? : ");
                     double emprestimo = double.Parse(Console.ReadLine());
-                    ContaEmpresarial contaPj = new ContaEmpresarial(0, saque, deposito, 500);
+                    ContaEmpresarial contaPj = new ContaEmpresarial(5000, saque, deposito, 500);
                     Juridica juridica = new Juridica(nome, idade, cnpj, contaPj);
                     contaPj.Emprestimo(emprestimo);
-                    contaPj.AtualizarSaldo();
                     contaPj.ClienteDeposito(deposito);
                     contaPj.ClienteSaque(saque);
                     pessoas.Add(juridica);
                 }
                 Console.WriteLine();
             }
+
+        }
+        private static void ListarCadastros()
+        {
             foreach (Pessoa dados in pessoas)
             {
-                Console.Write("----------------------------------");
-                Console.Write("      Dados do cliente: \n");
-                Console.Write("\n----------------------------------\n");
+                Console.Write("--------------------------------------");
+                Console.WriteLine("\n      Dados do cliente:");
+                Console.Write("--------------------------------------");
                 Console.WriteLine(dados);
-                
             }
+        }
 
+        private static string ObterOpcaoUsuario()
+        {
+            Console.WriteLine();
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine(" System Bank    (   #  B.K  )!!!");
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("Informa a opção desejada: ");
+            Console.WriteLine("1 - Inserir novo cadastro");
+            Console.WriteLine("2 - Listar cadastros");
+            //Console.WriteLine("3 - Transferir");
+            //Console.WriteLine("4 - Sacar");
+            //Console.WriteLine("5 - Depositar");
+            //Console.WriteLine("C - Limpar Tela");
+            //Console.WriteLine("X - Sair");
+            string ObterOpcaoUsuario = Console.ReadLine().ToUpper();
+            System.Console.WriteLine();
+            return ObterOpcaoUsuario;
         }
     }
 }
+

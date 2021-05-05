@@ -5,27 +5,15 @@
         public double Poupanca { get; set; }
 
 
-        public ContaPF(double saldo, double saque, double deposito, double poupanca) : 
-            base(saldo, saque,deposito)
+        public ContaPF(double saldo, double saque, double deposito, double poupanca) :
+            base(saldo, saque, deposito)
         {
             Poupanca = poupanca;
         }
 
-        public double Poupa(double poupa)
+        public double Poupa()
         {
-            return Saldo += poupa;
-        }
-
-        public override string ToString()
-        {
-            return ", Saldo:"
-                + Saldo
-                + ", Saque:"
-                + Saque
-                + ", Deposito:"
-                + Deposito
-                + ", Poupança:"
-                + Poupanca;
+            return Saldo += Poupanca;
         }
     }
 }
