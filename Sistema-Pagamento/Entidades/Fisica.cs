@@ -5,16 +5,17 @@ namespace Sistema_Pagamento.Entidades
 {
     class Fisica : Pessoa
     {
-        public int Cpf { get; set; }
+        public string Cpf { get; set; }
         public ContaPF Conta { get; set; }
 
 
-        public Fisica(string nome, int idade, int cpf, ContaPF conta) : base(nome, idade)
+        public Fisica(string nome, int idade, string cpf, ContaPF conta) : base(nome, idade)
         {
             Cpf = cpf;
             Conta = conta;
         }
         
+
         public override string ToString()
         {
             return "\nNome: "

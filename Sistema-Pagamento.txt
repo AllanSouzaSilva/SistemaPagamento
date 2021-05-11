@@ -31,18 +31,24 @@ Conta negocios: Limite de emprestimo. ok
 - Conta negócios ok
 
 4. Criar Metodos da classe pessoa.
-05/05/2021 - Criado os metodos e estam todos funcionando. Falta o crud. 
-05/05/2021 -  Criando os menus de interação com switc e case.
-
-Toupper: Converte o valor de um caractere Unicode especificado em seu equivalente em letras maiúsculas usando as informações de formatação específicas à cultura especificadas.
-
 Sacar. ok
 Depositar. ok
 Emprestimo. ok
 Saldo. ok 
-Consultar.
+Consultar.ok 
 Alterar. 
 Deletar.
+
+5. Criar metodos para pegar o indice do objeto da lista pessoa e substituir por um novo cadastro
+ Criar metodo de deletar. 
+
+
+----------------------------------------------------------------------------------------
+Foi ultilizado no projeto: 
+Toupper: Converte o valor de um caractere Unicode especificado em seu equivalente em letras maiúsculas usando as informações de formatação específicas à cultura especificadas.
+
+
+
 
 
 

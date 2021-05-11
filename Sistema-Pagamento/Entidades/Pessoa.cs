@@ -15,21 +15,7 @@ namespace Sistema_Pagamento.Entidades
             Idade = idade;
         }
 
-        /*public void AdiconarCliente(Pessoa pessoa)
-        {
-            pessoas.Add();
-        }
-        public void AlterarCliente(Pessoa pessoa)
-        {
-            if (Id == pessoa.Id)
-            {
-                //Redigitar cadastro
-            }
-        }
-
-        public void DeletarCliente(Pessoa pessoas)
-        {
-            pessoas.Remover(pessoas);
-        }*/
+        
+        
      }
 }
